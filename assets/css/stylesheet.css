@@ -72,10 +72,17 @@ h2 {
     background-color: white;
 }
 
-.col-md-6 {
+.col-sm-6 {
     padding-bottom: 2%;
     padding-right: 2%;
     padding-left: 2%;
+}
+
+.col-sm-10 {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 @media (max-width: 576px) {

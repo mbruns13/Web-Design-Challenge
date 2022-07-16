@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Latitude Data Project</title>
+    <base href="https://mbruns13.github.io/Web-Design-Challenge/">
     <!-- Bring in bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
-
 <!-- 
     A descriptive title and heading tag.
     The plot or visualization for the selected comparison (latitude vs: max temperature, humidity, cloudiness, or wind speed). The images displayed on these pages should be stored in the assets/images folder.
@@ -18,14 +18,14 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <!-- help on navbar placement here: https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items -->
                 <nav class="navbar navbar-expand-sm">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <h4>Latitude</h4>
                         </a>
-                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler custom-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarScroll">
@@ -35,10 +35,10 @@
                                         Visualizations
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                        <li><a class="dropdown-item" href="#">Max Temperature</a></li>
-                                        <li><a class="dropdown-item" href="#">Humidity</a></li>
-                                        <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                                        <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                                        <li><a class="dropdown-item" href="visualizations/maxtemp.html">Max Temperature</a></li>
+                                        <li><a class="dropdown-item" href="visualizations/humidity.html">Humidity</a></li>
+                                        <li><a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a></li>
+                                        <li><a class="dropdown-item" href="visualizations/windspeed.html">Wind Speed</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -52,15 +52,65 @@
                     </div>
                 </nav>
             </div>
+        </div>
+        <!-- <div class="row justify-content-around custom-background">
+            <div class="col-sm-7">
+                <h2>Summary: Latitude vs. X</h2>
+                <hr>
+                <p>
+                    <img align="left" alt="placeholder" src="https://github.com/mbruns13/Web-Design-Challenge/blob/main/assets/images/Fig1.png?raw=true" width="210" height="200"> The purpose of this project was to analyze how weather changes as you get
+                    closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemple a dataset on over 500 cities.
+                    <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weater vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations
+                        created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Visualizations</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#">
+                                <img class="card-img-top img-responsive" alt="Max Temperature Thumbnail" src="https://github.com/mbruns13/Web-Design-Challenge/blob/main/assets/images/Fig1.png?raw=true">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#">
+                                <img class="card-img-top img-responsive" alt="Humidity Thumbnail" src="https://github.com/mbruns13/Web-Design-Challenge/blob/main/assets/images/Fig2.png?raw=true" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#">
+                                <img class="card-img-top img-responsive" alt="Cloudiness Thumbnail" src="https://github.com/mbruns13/Web-Design-Challenge/blob/main/assets/images/Fig3.png?raw=true">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a href="#">
+                                <img class="card-img-top img-responsive" alt="Wind Speed Thumbnail" src="https://github.com/mbruns13/Web-Design-Challenge/blob/main/assets/images/Fig4.png?raw=true" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
 
 
 
 
-
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-            <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

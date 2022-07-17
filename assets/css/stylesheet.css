@@ -86,6 +86,10 @@ h2 {
     padding: 4%;
 }
 
+table {
+    font-size: small;
+}
+
 @media (max-width: 576px) {
     .navbar-text h4 {
         color: white;

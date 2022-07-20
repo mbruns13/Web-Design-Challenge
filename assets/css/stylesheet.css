@@ -107,11 +107,16 @@ table {
 }
 
 @media (max-width: 576px) {
+    .navbar {
+        background: #019f9f;
+        color: white;
+    }
     .navbar-text h4 {
         color: white;
     }
     .nav-item a {
-        color: white;
+        color: rgb(106, 106, 106);
+        background-color: white;
     }
     .navbar-toggler {
         padding-right: 10px;
@@ -130,15 +135,17 @@ table {
         margin-right: 10px;
         margin-bottom: 5px;
     }
-    .navbar {
-        background: #019f9f;
-        /* color: white; */
-    }
-    .dropdown-menu {
+    /* .dropdown-menu {
         background-color: transparent;
         border: none;
+    } */
+    .navbar-collapse {
+        background-color: white;
     }
     .custom-background {
         background-color: white;
+    }
+    .nav-link a:hover {
+        color: rgb(229, 229, 229) !important;
     }
 }

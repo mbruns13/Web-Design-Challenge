@@ -111,6 +111,16 @@ table {
     margin: auto;
 }
 
+.nav-link:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: lightgray;
+    color: black;
+}
+
 @media (max-width: 576px) {
     .navbar {
         background: #019f9f;
@@ -129,6 +139,9 @@ table {
     .custom-toggler.navbar-toggler {
         border-color: lightgray;
     }
+    .dropdown-menu {
+        border: none;
+    }
     .custom-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(106, 106, 106)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
@@ -140,17 +153,16 @@ table {
         margin-right: 10px;
         margin-bottom: 5px;
     }
-    /* .dropdown-menu {
-        background-color: transparent;
-        border: none;
-    } */
     .navbar-collapse {
         background-color: white;
     }
     .custom-background {
         background-color: white;
     }
-    .nav-link a:hover {
-        color: rgb(229, 229, 229) !important;
+    .nav-link:hover {
+        background-color: lightgray;
+    }
+    .shadow {
+        box-shadow: none !important;
     }
 }

@@ -5,6 +5,7 @@
 .container-fluid {
     padding-left: 1px;
     margin-top: 5px;
+    /* align-items: baseline; */
 }
 
 .col-sm-12 {
